@@ -17,7 +17,7 @@
 <option value="A4">A4</option> 
 </select>
 <input name="opr" type="hidden" value="open">
-<input type="submit">
+<input type="submit" value="open">
 </form>
 
 <form action="<%=request.getContextPath()%>/web/door/testindex" method="post">
@@ -29,12 +29,14 @@
 <option value="A4">A4</option> 
 </select>
 <input name="opr" type="hidden" value="close">
-<input type="submit">
+<input type="submit" value="close">
 </form>
 
 <form action="<%=request.getContextPath()%>/web/randomdoor/testindex" method="post">
 模拟开关门:
+<label for="num">次数</label>
 <input name="num" type="text" value="10">
+<label for="sleeptime">间隔</label>
 <input name="sleeptime" type="text" value="100">
 <input type="submit" value="run">
 </form>
